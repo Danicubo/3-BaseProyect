@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>3-BaseProyect</title>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
+    <script type="module" src="./src/app.js"></script>
+    <script type="module" src="./src/module.js"></script>
+    <link rel="stylesheet" href="./styles/styles.css">
+
+</head>
+
+<body>
+    <div id="buttons">
+        <div id="backBtn">Return</div>
+        <div id="createCubeBtn">Create Cube</div>
+        <div id="createSphereBtn">Create Spehere</div>
+        <div id="createSpotLightBtn">Spot Light</div>
+        <div id="createAmbientLightBtn"> Ambient Light</div>
+        <br>
+        <div id="createPointLightBtn">Point Light</div>
+        <br/>
+        <div id="createDiretionalLightBtn">Diretional Light</div>
+    </div>
+
+    <div id="content">
+        <div class="btnOption small" data-size="10">
+            <div class="title">Small</div>
+            <span>10x10</span>
+        </div>
+        <div class="btnOption medium" data-size="20">
+            <div class="title">Medium</div>
+            <span>20x20</span>
+        </div>
+        <div class="btnOption big" data-size="40">
+            <div class="title">Big</div>
+            <span>40x40</span>
+        </div>
+        <div class="btnOptionCustom custom" data-size="custom">
+            <div class="customBtm">
+                <div class="title">Custom</div>
+                <span>?x?</span>
+            </div>
+            <input type="text" name="data-size" id="data-size">
+            <input type="submit" value="Enviar" id="sendBtn">
+        </div>
+    </div>
+
+</body>
+
+</html>

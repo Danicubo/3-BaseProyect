@@ -1,0 +1,231 @@
+:root {
+    /*Paleta de Colores CSS*/
+    --backgrounColor: #60a3bc;
+    --basicColor: white;
+    --shadow: #ccc;
+    --blackColor: #0f0b0b;
+    --colorFont: #ECF0F1;
+    --button1: #00cec9;
+    --button2: #fab1a0;
+    --button3: #A9CCE3;
+    --button4: #00b894;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: var(--backgrounColor);
+    font-family: 'Comfortaa', cursive;
+    width: 100vw;
+    height: 100vh;
+}
+
+
+/* body #sceneSize {
+    display: none;
+} */
+
+body #content {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+body #content .btnOption,
+body #content .btnOptionCustom {
+    border: 10px solid var(--basicColor);
+    border-radius: 10px;
+    border-style: outset;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+    margin: 2vw;
+    width: 15vw;
+    height: 20vh;
+    color: var(--colorFont);
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+}
+
+body #content .btnOption:hover,
+body #content .btnOptionCustom:hover {
+    width: 20vw;
+}
+
+body #content .btnOption .title,
+body #content .btnOptionCustom .title {
+    font-size: 180%;
+    margin-bottom: 2px;
+}
+
+body #content span {
+    display: flex;
+    justify-content: center;
+    margin: 0px;
+    padding: 0;
+}
+
+body #data-size {
+    width: 80px;
+}
+
+body #buttons {
+    display: flex;
+    flex-flow: flex;
+}
+
+body #backBtn {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--basicColor);
+    width: 8%;
+    margin: 12px;
+    border: 5px solid var(--basicColor);
+    border-radius: 10%;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+body #backBtn:hover {
+    transform: scale(1.1);
+}
+
+body #createCubeBtn {
+    display: flex;
+    flex-flow: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--basicColor);
+    width: 10%;
+    margin: 12px;
+    border: 5px solid var(--basicColor);
+    border-radius: 15%;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+body #createCubeBtn:hover {
+    transform: scale(0.988);
+}
+
+body #createSphereBtn {
+    display: flex;
+    flex-flow: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--basicColor);
+    width: 10%;
+    margin: 12px;
+    border: 5px solid var(--basicColor);
+    border-radius: 15%;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+body #createSphereBtn:hover {
+    transform: scale(0.988);
+}
+
+body #createSpotLightBtn {
+    display: flex;
+    flex-flow: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--basicColor);
+    width: 10%;
+    margin: 12px;
+    border: 5px solid var(--basicColor);
+    border-radius: 15%;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+body #createLightBtn:hover {
+    transform: scale(0.988);
+}
+
+body #createAmbientLightBtn {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--basicColor);
+    width: 10%;
+    margin: 12px;
+    border: 5px solid var(--basicColor);
+    border-radius: 15%;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+body #createAmbientLightBtn:hover {
+    transform: scale(0.988);
+}
+
+body #createPointLightBtn {
+    display: flex;
+    flex-flow: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--basicColor);
+    width: 10%;
+    margin: 12px;
+    border: 5px solid var(--basicColor);
+    border-radius: 15%;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+body #createPointLightBtn:hover {
+    transform: scale(0.988);
+}
+
+body #createDiretionalLightBtn {
+    display: flex;
+    flex-flow: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--basicColor);
+    width: 10%;
+    margin: 12px;
+    border: 5px solid var(--basicColor);
+    border-radius: 15%;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+body #createDiretionalLightBtn:hover {
+    transform: scale(0.988);
+}
+
+.text {
+    width: 60%;
+    margin: 3px;
+}
+
+.small {
+    background-color: var(--button1);
+}
+
+.medium {
+    background-color: var(--button2);
+}
+
+.big {
+    background-color: var(--button3);
+}
+
+.custom {
+    background-color: var(--button4);
+}
